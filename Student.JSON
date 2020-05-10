@@ -1,0 +1,68 @@
+{
+    "students": [{
+            "courseid": "612",
+            "student": [{
+                    "studentid": "1001",
+                    "studentname": "shiva",
+                    "dayid": "F"
+                }, {
+                    "studentid": "1002",
+                    "studentname": "pranav",
+                    "dayid": "F"
+                }
+            ]
+        },
+        {
+            "courseid": "671",
+            "student": [{
+                      "studentid": "1001",
+                      "studentname": "shiva",
+                      "dayid": "R"
+                }, {
+                  "studentid": "1003",
+                  "studentname": "preetham",
+                  "dayid": "R"
+                }
+            ]
+        },
+        {
+            "courseid": "631",
+            "student": [{
+                      "studentid": "1001",
+                      "studentname": "shiva",
+                      "dayid": "M"
+        }, {
+                     "studentid": "1004",
+                     "studentname": "Bharath",
+                     "dayid": "M"
+                }
+            ]
+        },
+        {
+            "courseid": "654",
+            "student": [{
+                     "studentid": "1005",
+                     "studentname": "Ravi",
+                     "dayid": "T"
+        }, {
+                   "studentid": "1004",
+                   "studentname": "Bharath",
+                   "dayid": "T"
+                }
+            ]
+        },
+        {
+            "courseid": "644",
+            "student": [{
+                     "studentid": "1004",
+                     "studentname": "Bharath",
+                     "dayid": "W"
+        }, {
+                    "studentid": "1003",
+                    "studentname": "Preetham",
+                    "dayid": "W"
+                }
+            ]
+        }
+    ]
+}

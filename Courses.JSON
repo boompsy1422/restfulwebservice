@@ -1,0 +1,38 @@
+{
+    "courses": [{
+            "courseid": "612",
+            "coursename": "concepts and structures in internet computing",
+            "credits": "3",
+            "professor": "Teresa Brookes",
+            "type": "Networking"
+        },
+        {
+          "courseid": "671",
+          "coursename": "computer vision",
+          "credits": "4",
+          "professor": "Juan shah",
+          "type": "Artificial intelligence"
+        },
+        {
+          "courseid": "631",
+          "coursename": "computer networking",
+          "credits": "3",
+          "professor": "Anthony Joseph",
+          "type": "Networking"
+        },
+        {
+          "courseid": "654",
+          "coursename": "game programming",
+          "credits": "4",
+          "professor": "tdbhatt",
+          "type": "computer graphics"
+        },
+        {
+          "courseid": "644",
+          "coursename": "pattern recognition",
+          "credits": "4",
+          "professor": "sung yang cha",
+          "type": "Artificial Intelligence"
+        }
+    ]
+}

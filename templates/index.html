@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <style type="text/css">
+         body {
+ background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+          background-size: cover;
+         font-size: 18px;
+		 }
+         .table td, .table th {
+         border-top: 1px solid black;
+         }
+         header {
+         height: 100px;
+         }
+         h1 {
+         text-align: center;
+         background-color: light-blue;
+         color: red;
+         height: 70%;
+         padding-top: 10px;
+         }
+         a {
+            padding: 5px;
+            color:blue;
+         }
+         a:link {
+         color: blue;
+         }
+         a:visited {
+         color: blue;
+         }
+         a:hover {
+         text-decoration: underline;
+         color: navy;
+         <!--font-size: 16px;-->
+         }
+         a:active {
+         color: green;
+         }
+         .nav {
+            padding-left: 20px;
+            border-top: 5px;
+            border-bottom: 5px;
+         }
+
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Computer science Courses: Students</h1>
+      </header>
+      {% if list_data|length >= 1 %}
+      <table class="table">
+         <thead>
+            <tr>
+               <td><a class="nav" href="/courses"> All Courses </a></td>
+            </tr>
+            <tr>
+               <th scope="col">Course ID</th>
+               <th scope="col">CourseName</th>
+               <th scope="col">Credits</th>
+               <th scope="col">Professor</th>
+               <th scope="col">Type/th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for data in list_data %}
+            <tr>
+               <td scope="row"> <a href="/courses/{{ data.courseid }}"> {{ data.courseid }} </a> </td>
+               <td scope="row"> {{ data.coursename }} </td>
+               <td scope="row"> {{ data.credits }} </td>
+               <td scope="row"> {{ data.professor }} </td>
+               <td scope="row"> {{ data.type }} </td>
+               <td scope="row"> <a href="/courses/{{ data.courseid }}/student"> Students </a> </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      {% endif %}
+      {% if list_student_data|length >= 1 %}
+      <table class="table">
+         <thead>
+            <tr>
+               <td><a class="nav" href="/courses"> All Courses</a></td>
+               <td><a class="nav" href="/courses/{{ course_id }}"> Go To Course </a></td>
+            </tr>
+            <tr>
+               <th scope="col">StudentId</th>
+               <th scope="col">StudentName</th>
+               <th scope="col">Day</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for studentdata in list_student_data %}
+            <tr>
+               <td scope="row"> <a href="/courses/{{ course_id }}/student/{{ studentdata.studentid }}"> {{ studentdata.studentid }} </a> </td>
+               <td scope="row"> {{ studentdata.studentname }} </td>
+               <td scope="row"> {{ studentdata.dayid }} </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      {% endif %}
+   </body>
+</html>
